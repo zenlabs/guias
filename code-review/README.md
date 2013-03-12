@@ -25,6 +25,8 @@ cat ~/.ssh/id_rsa.pub
 # ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6eNtGpNGwstc....
 ````
 
+![Adicion de llave ssh](/zenlabs/guias/blob/master/images/add-ssh-gitlab.jpg "Title")
+
 Importante: usted puede registrar todas las maquinas que requiera.
 Configurar el email y el usuario dentro de git:
 Para asignar el nombre de usuario:
@@ -95,7 +97,11 @@ git push origin feature/nueva_funcionalidad
 
 luego dentro de gitlab tiene que iniciar un nuevo merge request:
 
+![Nuevo Merge Request](/zenlabs/guias/blob/master/images/merge-request.jpg "Title")
+
 se va a la opción dentro del proyecto Merge Requests => New Merge Request
+
+![Nuevo Merge Request](/zenlabs/guias/blob/master/images/new-merge-request.jpg "Title")
 
 aquí elegimos el branch feature que anteriormente se realizo un push y este **SIEMPRE** debe de pedirse un merge a develop, como en la figura.
 Luego añada un descripción corta de la característica que acaba de realizar, y además seleccione a su code review siempre, normalmente es el líder del grupo.
@@ -111,7 +117,7 @@ Cuando este trabajando en su feature, es recomendable que no exceda de 3 dias la
 
 #### Nota 2:
 
-Usted puede todo el momento hacer push a su feature, y este puede ser revisado por su lider de grupo en cualquier momento, pero una ves que se ponga al Merge request el comentario ** "Code Review" ** este indicara que el lider ya puede hacer la revision de codigo y ademas el merge a develop,  el merge solo se debe de realizar una solo ves ya que sino traera problemas dentro del proyecto.
+Usted puede todo el momento hacer push a su feature, y este puede ser revisado por su lider de grupo en cualquier momento, pero una ves que se ponga al Merge request el comentario **Code Review** este indicara que el lider ya puede hacer la revision de codigo y ademas el merge a develop,  el merge solo se debe de realizar una solo ves ya que sino traera problemas dentro del proyecto.
 
 Tips:
 -----
