@@ -89,7 +89,7 @@ git checkout develop
 git pull --rebase origin develop
 git flow feature start nueva_funcionalidad
 git commit --am “descripción de la funcionalidad”
-git commit …. # aquí diferentes commits
+git commit ... # aquí diferentes commits
 git push origin feature/nueva_funcionalidad
 ````
 
@@ -97,18 +97,27 @@ luego dentro de gitlab tiene que iniciar un nuevo merge request:
 
 se va a la opción dentro del proyecto Merge Requests => New Merge Request
 
-aquí elegimos el branch feature que anteriormente se realizo un push y este SIEMPRE debe de pedirse un merge a develop, como en la figura.
+aquí elegimos el branch feature que anteriormente se realizo un push y este **SIEMPRE** debe de pedirse un merge a develop, como en la figura.
 Luego añada un descripción corta de la característica que acaba de realizar, y además seleccione a su code review siempre, normalmente es el líder del grupo.
 Una ves que se hayan hecho la revisión si pasa el líder de grupo hara el merge automatico a develop, sino entonces le dira las cosas que tiene que arreglar para que pueda pasar su código.
-Importante: desde que crea su feature ya no realizara pull ni a develop o master dentro del mismo, esto corromperá su codigo.
-Nota: cuando este trabajando en su feature, es recomendable que no exceda de 3 dias laborables, ya que al desactualizar el código por esos tres días al momento de mergear dentro de develop será difícil para el líder mergear su código, además haga commits con menos de 10 archivos modificados por commit, y menos de 10 commits por merge request.
 
+##### Importante:
+
+Desde que crea su feature ya no realizara pull ni a develop o master dentro del mismo, esto corromperá su codigo.
+
+#### Nota:
+
+Cuando este trabajando en su feature, es recomendable que no exceda de 3 dias laborables, ya que al desactualizar el código por esos tres días al momento de mergear dentro de develop será difícil para el líder de grupo mergear su código, además haga commits con menos de 10 archivos modificados por commit, y menos de 10 commits por merge request.
+
+#### Nota 2:
+
+Usted puede todo el momento hacer push a su feature, y este puede ser revisado por su lider de grupo en cualquier momento, pero una ves que se ponga al Merge request el comentario ** "Code Review" ** este indicara que el lider ya puede hacer la revision de codigo y ademas el merge a develop,  el merge solo se debe de realizar una solo ves ya que sino traera problemas dentro del proyecto.
 
 Tips:
 -----
 
 Resetear su branch o limpiarlo: cuando al momento de hacer pull no le deja o no desaparecen archivos que ya los commiteo o simplemente piensa que corrompio su código, haga lo siguiente:
-esto borrara TODOS su cambios que tenga, tenga mucho cuidado, en este caso limpiaremos el branch develop:
+esto borrara **TODOS** su cambios que tenga, tenga mucho cuidado, en este caso limpiaremos el branch develop:
 
 ````
 git fetch origin
