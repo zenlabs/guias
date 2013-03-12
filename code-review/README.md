@@ -107,6 +107,25 @@ aquí elegimos el branch feature que anteriormente se realizo un push y este **S
 Luego añada un descripción corta de la característica que acaba de realizar, y además seleccione a su code review siempre, normalmente es el líder del grupo.
 Una ves que se hayan hecho la revisión si pasa el líder de grupo hara el merge automatico a develop, sino entonces le dira las cosas que tiene que arreglar para que pueda pasar su código.
 
+##### OJO
+
+Una ves que se termine el code review de un feature y este se haya mergeado al branch **develop** este branch tiene que ser borrado de la maquina local como del servidor remoto __(principalmente del remoto)__, Tiene que estar seguro que se a mergeado a develop por que sus cambios se perderan
+
+**Procedimiento**
+
+borrado del branch local:
+
+````
+git branch -d feature/nombre_del_feature
+````
+
+borrado del branch remoto:
+
+````
+git push origin :feature/nombre_del_feature
+````
+
+
 ##### Importante:
 
 Desde que crea su feature ya no realizara pull ni a develop o master dentro del mismo, esto corromperá su codigo.
