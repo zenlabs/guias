@@ -3,7 +3,7 @@ Guias
 
 Guias para tener un orden dentro de nuestro trabajo, y programar bajo un estilo unico dentro de Zenlabs.
 
-* [Code Review con Git](/zenlabs/guias/tree/master/code-review)
+* [Code Review con Git](zenlabs/guias/tree/master/code-review)
 * Buenas Practicas
 * Estilos de programacion
 
@@ -30,4 +30,3 @@ License
 
 It is distributed under the [Creative Commons
 Attribution License](http://creativecommons.org/licenses/by/3.0/).
-
