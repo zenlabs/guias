@@ -5,7 +5,7 @@ Guias para tener un orden dentro de nuestro trabajo, y programar bajo un estilo 
 
 * [Code Review con Git](http://gitlab.zenlabs.net/zenlabs/guias/blob/master/code-review/README.md)
 * [Buenas Practicas de programacion](http://gitlab.zenlabs.net/zenlabs/guias/blob/master/best-practices/README.md)
-* Estilos de programacion
+* [Guia de Estilo de programacion en Ruby (LECTURA FORZADA)](http://gitlab.zenlabs.net/zenlabs/guias/blob/master/code-style/ruby/README.md)
 
 High level guidelines:
 
