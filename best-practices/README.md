@@ -1,6 +1,6 @@
-=== Buenas Practicas
+# Buenas Practicas
 
-==== Instalacion
+## Instalacion
 
 - Si programa en ruby utilize OSX o Unix (Ubuntu)
 - No utilize Windows para programar en ruby o python

@@ -25,7 +25,7 @@ cat ~/.ssh/id_rsa.pub
 # ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6eNtGpNGwstc....
 ````
 
-![Adicion de llave ssh](/zenlabs/guias/raw/master/images/add-ssh-gitlab.jpg "Title")
+![Adicion de llave ssh](http://gitlab.zenlabs.net/zenlabs/guias/raw/master/images/add-ssh-gitlab.jpg "Title")
 
 Importante: usted puede registrar todas las maquinas que requiera.
 Configurar el email y el usuario dentro de git:
@@ -46,19 +46,14 @@ git config --global user.email
 Como paso final esta probar que funcione el acceso para esto ejecuta este comando:
 
 ````
-ssh git@zenlabs.net
-hello cr_zenlabs_net_1356734671, this is git@vps-1103321-10687 running gitolite3 v3.04-42-g2d29cf7 on git 1.7.11.2
-
- R W	develoft/auxiliumart
- R W	develoft/auxrails
- R W	develoft/calvirug
- R W	zenlabs/goola
+ssh git@gitlab.zenlabs.net
+Welcome to GitLab, USERNAME!
 Connection to zenlabs.net closed.
 ````
 
 Si da otro tipo de respuesta consulte con el administrador.
 Instalacion de git flow
-Seguir los siguientes pasos https://github.com/nvie/gitflow/wiki/Installation
+Seguir los siguientes pasos https://github.com/petervanderdoes/gitflow/wiki (NUEVO)
 
 
 2 Flujo de trabajo:
@@ -97,11 +92,11 @@ git push origin feature/nueva_funcionalidad
 
 luego dentro de gitlab tiene que iniciar un nuevo merge request:
 
-![Nuevo Merge Request](/zenlabs/guias/raw/master/images/merge-request.jpg "Title")
+![Nuevo Merge Request](http://gitlab.zenlabs.net/zenlabs/guias/raw/master/images/merge-request.jpg "Title")
 
 se va a la opción dentro del proyecto Merge Requests => New Merge Request
 
-![Nuevo Merge Request](/zenlabs/guias/raw/master/images/new-merge-request.jpg "Title")
+![Nuevo Merge Request](http://gitlab.zenlabs.net/zenlabs/guias/raw/master/images/new-merge-request.jpg "Title")
 
 aquí elegimos el branch feature que anteriormente se realizo un push y este **SIEMPRE** debe de pedirse un merge a develop, como en la figura.
 Luego añada un descripción corta de la característica que acaba de realizar, y además seleccione a su code review siempre, normalmente es el líder del grupo.
