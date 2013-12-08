@@ -3,27 +3,12 @@
 > Los modelos a seguir son importantes. <br/>
 > -- Officer Alex J. Murphy / RoboCop
 
-Una cosa siempre me ha molestado como desarrollador Ruby - los
-desarrolladores Python tienen una gran referencia de estilo de
-programación ([PEP-8](http://www.python.org/dev/peps/pep-0008/)) y
-nosotros nunca tuvimos una guía oficial, documentando estilos de
-codificación y mejores prácticas de Ruby. Y yo creo que los estilos
-importan. También creo que una gran comunidad de hackers, tales como
-tiene Ruby, debería ser muy capaz de producir este codiciado documento.
+Una cosa siempre me ha molestado como desarrollador Ruby - los desarrolladores Python tienen una gran referencia de estilo de programación ([PEP-8](http://www.python.org/dev/peps/pep-0008/)) y nosotros nunca tuvimos una guía oficial, documentando estilos de codificación y mejores prácticas de Ruby. Y yo creo que los estilos importan. También creo que una gran comunidad de hackers, tales como tiene Ruby, debería ser muy capaz de producir este codiciado documento.
 
-Esta guía comenzó su vida como nuestra guía interna de codificación de
-Ruby para nuestra compañía (escrito por su servidor). En algún momento
-decidí que el trabajo que estaba haciendo podría ser interesante para los
-miembros de la comunidad Ruby en general y que el mundo no tenía la
-necesidad de otra guía interna de una empresa. Pero sin duda el mundo
-podría beneficiarse de un conjunto de prácticas, lenguajes y estilos para
-la programación de Ruby dirigido por la comunidad y sancionado por la
-comunidad.
+Esta guía comenzó su vida como nuestra guía interna de codificación de Ruby para nuestra compañía (escrito por su servidor). En algún momentodecidí que el trabajo que estaba haciendo podría ser interesante para los miembros de la comunidad Ruby en general y que el mundo no tenía la necesidad de otra guía interna de una empresa. Pero sin duda el mundo podría beneficiarse de un conjunto de prácticas, lenguajes y estilos para la programación de Ruby dirigido por la comunidad y sancionado por la comunidad.
 
-Desde el inicio de la guía he recibido un montón de comentarios de los
-miembros de la excepcional comunidad Ruby alrededor de todo el mundo.
-¡Gracias por todas las sugerencias y el apoyo! Juntos podemos hacer un
-recurso beneficioso para todos y cada uno de los desarrolladores Ruby.
+Desde el inicio de la guía he recibido un montón de comentarios de los miembros de la excepcional comunidad Ruby alrededor de todo el mundo.
+¡Gracias por todas las sugerencias y el apoyo! Juntos podemos hacer un recurso beneficioso para todos y cada uno de los desarrolladores Ruby.
 
 Por cierto, si estás interesado en Rails es posible que desees ver la [Guía
 de Estilos de Ruby on Rails 3](https://github.com/bbatsov/rails-style-guide)
@@ -1628,13 +1613,9 @@ que no utilizar comentarios.
     end
     ```
 
-* Cuando diseñes jerarquías de clases, asegurate de que se ajuseten al
-  [Principio de Sustitución de Liskov](http://es.wikipedia.org/wiki/Principio_de_sustituci%C3%B3n_de_Liskov).
-* Tratá de hacer tus clases tan
-  [SOLID](http://es.wikipedia.org/wiki/SOLID_(object-oriented_design))as
-  como sea posible.
-* Siempre proporcioná un método `to_s` para clases que representen
-  objetos de dominio.
+* Cuando diseñes jerarquías de clases, asegurate de que se ajuseten al [Principio de Sustitución de Liskov](http://es.wikipedia.org/wiki/Principio_de_sustituci%C3%B3n_de_Liskov).
+* Tratá de hacer tus clases tan [SOLID](http://es.wikipedia.org/wiki/SOLID_(object-oriented_design)as como sea posible.
+* Siempre proporcioná un método `to_s` para clases que representen objetos de dominio.
 
     ```Ruby
     class Person
@@ -1651,8 +1632,7 @@ que no utilizar comentarios.
     end
     ```
 
-* Usá la familia de funciones `attr` para definir accesores triviales
-o mutators.
+* Usá la familia de funciones `attr` para definir accesores triviales o mutators.
 
     ```Ruby
     # mal
@@ -1694,8 +1674,7 @@ o mutators.
     attr_reader :one, :two, :three
     ```
 
-* Considerá usar `Struct.new`, el cual define por vos los accesores
-triviales, constructor y operadores de comparación.
+* Considerá usar `Struct.new`, el cual define por vos los accesores triviales, constructor y operadores de comparación.
 
     ```Ruby
     # bien
@@ -1715,8 +1694,7 @@ triviales, constructor y operadores de comparación.
 
 * No extiendas un `Struct.new` - ya de por si es una clase nueva. Extendiéndolo introduce un nivel de clase superfluo y también puede introducir errores extraños si el archivo es requerido múltiples veces.
 
-* Considerá agregar un método factory para proveer más formas sensibles
-de crear instancias de una clase en particular.
+* Considerá agregar un método factory para proveer más formas sensibles de crear instancias de una clase en particular.
 
     ```Ruby
     class Person
@@ -1764,8 +1742,7 @@ de crear instancias de una clase en particular.
     end
     ```
 
-* Evitá el uso de variables de clas (`@@`) debido a sus comportamientos
-"sucios" en la herencia.
+* Evitá el uso de variables de clas (`@@`) debido a sus comportamientos "sucios" en la herencia.
 
     ```Ruby
     class Parent
@@ -1783,9 +1760,7 @@ de crear instancias de una clase en particular.
     Parent.print_class_var # => will print "child"
     ```
 
-    Como podés ver todas las clases en una jerarquía de clases en realidad
-    comparten una variable de clase. Por lo general las variables de instancia
-    de clase deben ser preferidas a las variables de clase.
+    Como podés ver todas las clases en una jerarquía de clases en realidad comparten una variable de clase. Por lo general las variables de instancia de clase deben ser preferidas a las variables de clase.
 
 * Asigná niveles de visibilidad adecuados para los métodos (`private`,
   `protected`) de acuerdo con su correcto uso. No vayas por ahi dejando
@@ -2589,13 +2564,9 @@ en esta guía.
 
 # Aportes
 
-Nada de lo que está en esta guía está escrito en piedra. Es mi deseo que
-trabajemos juntos con todos los que estén interesados con el estilo de
-código en Ruby, para que podamos crear un recurso que pueda beneficiar a
-toda la comunidad de Ruby.
+Nada de lo que está en esta guía está escrito en piedra. Es mi deseo que trabajemos juntos con todos los que estén interesados con el estilo de código en Ruby, para que podamos crear un recurso que pueda beneficiar a toda la comunidad de Ruby.
 
-Siéntanse libres de abrir tickets o enviar pull requests con mejoras. ¡Desde
-ya muchas gracias por su ayuda!
+Siéntanse libres de abrir tickets o enviar pull requests con mejoras. ¡Desde ya muchas gracias por su ayuda!
 
 # Licencia
 
@@ -2604,11 +2575,7 @@ Este trabajo está licenciado bajo [Creative Commons Attribution 3.0 Unported Li
 
 # Corre la Voz
 
-Una guía de estilos pensada para la comunidad es de poca ayuda para
-esa comunidad si no conoce su existencia. Escribí tweets sobre la guía,
-compartila con tus amigos y compañeros de trabajo. Cada comentario,
-sugerencia u opinión hace que la guía sea un poco mejor. Y lo que más
-queremos que la mejor guía posible, ¿verdad?
+Una guía de estilos pensada para la comunidad es de poca ayuda para esa comunidad si no conoce su existencia. Escribí tweets sobre la guía, compartila con tus amigos y compañeros de trabajo. Cada comentario, sugerencia u opinión hace que la guía sea un poco mejor. Y lo que más queremos que la mejor guía posible, ¿verdad?
 
 Saludos,<br/>
 [Bozhidar](https://twitter.com/bbatsov)
