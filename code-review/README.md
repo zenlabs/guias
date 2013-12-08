@@ -13,17 +13,17 @@ Luego de esto se tiene que registrar la llave ssh dentro del site para que la ma
 
 Para generar una llave dentro de su maquina haga el siguiente comando:
 
-````
+```bash
 ssh-keygen -t rsa -C "info@zenlabs.net"
 # Generating public/private rsa key pair...
-````
+```
 
 lo siguiente es copiar y pegar el contenido de la llave publica en su perfil, dentro de la sección SSH Keys
 
-````
+```bash
 cat ~/.ssh/id_rsa.pub
 # ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6eNtGpNGwstc....
-````
+```
 
 ![Adicion de llave ssh](http://gitlab.zenlabs.net/zenlabs/guias/raw/master/images/add-ssh-gitlab.jpg "Title")
 
@@ -31,7 +31,7 @@ Importante: usted puede registrar todas las maquinas que requiera.
 Configurar el email y el usuario dentro de git:
 Para asignar el nombre de usuario:
 
-````
+```bash
 git config --global user.name "Pepe botellas"
 # Setear el nombre
 git config --global user.name
@@ -41,15 +41,15 @@ git config --global user.email "tu_cuenta@zenlabs.net"
 # Setea el nuevo email
 git config --global user.email
 # Verificar el nuevo email #tu_cuenta@zenlabs.net
-````
+```
 
 Como paso final esta probar que funcione el acceso para esto ejecuta este comando:
 
-````
+```bash
 ssh git@gitlab.zenlabs.net
 Welcome to GitLab, USERNAME!
 Connection to zenlabs.net closed.
-````
+```
 
 Si da otro tipo de respuesta consulte con el administrador.
 Instalacion de git flow
@@ -62,33 +62,33 @@ Seguir los siguientes pasos https://github.com/petervanderdoes/gitflow/wiki (NUE
 dentro de los proyectos en Zenlabs se manejan dos branchs, uno el de producción o versión final es el branch “master” y otro de desarrollo que esta en “develop”.
 Tener una copia del proyecto en su maquina:
 
-````
+```bash
 git  clone git@zenlabs.net:ruta_al_repositorio.git
-````
+```
 
 la ruta del repositorio se le facilitara dentro de gitlab.
 Una ves completo, ejecutara:
 
-````
+```bash
 git fetch origin
-````
+```
 
 para crear el branch develop, que todavía no lo tiene, si lo tiene puede saltarse este paso:
 
-````
+```bash
 git checkout develop
-````
+```
 
 si tiene que crear nuevas funcionalidades dentro del repositorio, lo que deberá hacer es:
 
-````
+```bash
 git checkout develop
 git pull --rebase origin develop
 git flow feature start nueva_funcionalidad
 git commit --am “descripción de la funcionalidad”
 git commit ... # aquí diferentes commits
 git push origin feature/nueva_funcionalidad
-````
+```
 
 luego dentro de gitlab tiene que iniciar un nuevo merge request:
 
@@ -110,15 +110,15 @@ Una ves que se termine el code review de un feature y este se haya mergeado al b
 
 borrado del branch local:
 
-````
+```bash
 git branch -d feature/nombre_del_feature
-````
+```
 
 borrado del branch remoto:
 
-````
+```bash
 git push origin :feature/nombre_del_feature
-````
+```
 
 
 ##### Importante:
@@ -139,10 +139,10 @@ Tips:
 Resetear su branch o limpiarlo: cuando al momento de hacer pull no le deja o no desaparecen archivos que ya los commiteo o simplemente piensa que corrompio su código, haga lo siguiente:
 esto borrara **TODOS** su cambios que tenga, tenga mucho cuidado, en este caso limpiaremos el branch develop:
 
-````
+```bash
 git fetch origin
 git checkout origin/develop
 git branch -D develop
 git checkout -b develop
-````
+```
 
