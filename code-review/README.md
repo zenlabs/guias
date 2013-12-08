@@ -25,7 +25,7 @@ cat ~/.ssh/id_rsa.pub
 # ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6eNtGpNGwstc....
 ````
 
-![Adicion de llave ssh](/zenlabs/guias/blob/master/images/add-ssh-gitlab.jpg "Title")
+![Adicion de llave ssh](/zenlabs/guias/raw/master/images/add-ssh-gitlab.jpg "Title")
 
 Importante: usted puede registrar todas las maquinas que requiera.
 Configurar el email y el usuario dentro de git:
@@ -97,11 +97,11 @@ git push origin feature/nueva_funcionalidad
 
 luego dentro de gitlab tiene que iniciar un nuevo merge request:
 
-![Nuevo Merge Request](/zenlabs/guias/blob/master/images/merge-request.jpg "Title")
+![Nuevo Merge Request](/zenlabs/guias/raw/master/images/merge-request.jpg "Title")
 
 se va a la opción dentro del proyecto Merge Requests => New Merge Request
 
-![Nuevo Merge Request](/zenlabs/guias/blob/master/images/new-merge-request.jpg "Title")
+![Nuevo Merge Request](/zenlabs/guias/raw/master/images/new-merge-request.jpg "Title")
 
 aquí elegimos el branch feature que anteriormente se realizo un push y este **SIEMPRE** debe de pedirse un merge a develop, como en la figura.
 Luego añada un descripción corta de la característica que acaba de realizar, y además seleccione a su code review siempre, normalmente es el líder del grupo.
