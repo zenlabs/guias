@@ -3,8 +3,8 @@ Guias
 
 Guias para tener un orden dentro de nuestro trabajo, y programar bajo un estilo unico dentro de Zenlabs.
 
-* [Code Review con Git](http://gitlab.zenlabs.net/zenlabs/guias/tree/master/code-review)
-* [Buenas Practicas de programacion](/zenlabs/guias/tree/master/best-practices)
+* [Code Review con Git](http://gitlab.zenlabs.net/zenlabs/guias/blob/master/code-review/README.md)
+* [Buenas Practicas de programacion](http://gitlab.zenlabs.net/zenlabs/guias/blob/master/best-practices/README.md)
 * Estilos de programacion
 
 High level guidelines:
