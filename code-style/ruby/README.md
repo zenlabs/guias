@@ -10,9 +10,7 @@ Esta guía comenzó su vida como nuestra guía interna de codificación de Ruby 
 Desde el inicio de la guía he recibido un montón de comentarios de los miembros de la excepcional comunidad Ruby alrededor de todo el mundo.
 ¡Gracias por todas las sugerencias y el apoyo! Juntos podemos hacer un recurso beneficioso para todos y cada uno de los desarrolladores Ruby.
 
-Por cierto, si estás interesado en Rails es posible que desees ver la [Guía
-de Estilos de Ruby on Rails 3](https://github.com/bbatsov/rails-style-guide)
-complementaria.
+Por cierto, si estás interesado en Rails es posible que desees ver la [Guía de Estilos de Ruby on Rails 3](https://github.com/bbatsov/rails-style-guide) complementaria.
 
 # La Guía de Estilos de Ruby
 
@@ -90,14 +88,16 @@ Traducciones de esta guía están disponibles en los siguientes idiomas:
     end
     ```
 
-* Usá finales de línea estilo Unix. (*por defecto los usuarios BSD/Solaris/Linux/OSX
-  están protegidos, los usuarios de Windows tienen que tener mucho cuidado.)
-    * Si estás usando Git es posible que quieras agregar la siguiente
-    configuración para proteger tu proyecto de los finales de línea
-    de Windows para que no aparezcan solos:
+* Usá finales de línea estilo Unix. (*por defecto los usuarios BSD/Solaris/Linux/OSX están protegidos, los usuarios de Windows tienen que tener mucho cuidado.)
+    * Si estás usando Git es posible que quieras agregar la siguiente configuración para proteger tu proyecto de los finales de línea de Windows para que no aparezcan solos:
 
     ```bash
-    $ git config --global core.autocrlf true
+    $ git config --global core.autocrlf false
+    ```
+    o mejor:
+    
+    ```bash
+    $ git config --global core.autocrlf input
     ```
 
 * No uses `;` para separar declaraciones y expresiones.
