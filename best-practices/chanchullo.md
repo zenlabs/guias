@@ -13,25 +13,51 @@ Los Pasos para limpiar un branch son los siguientes:
 git st
 # muestra el branch en el que uno esta...
 ```
-
+```bash
 localhost:framin-co zenlabs$ git checkout development
+```
+```bash
 localhost:framin-co zenlabs$ git st
+```
+```bash
 localhost:framin-co zenlabs$ stree
+```bash
 localhost:framin-co zenlabs$ git pull --rebase development
+```
+```bash
 localhost:framin-co zenlabs$ git st
+```
+```bash
 localhost:framin-co zenlabs$ git add .
+```
+```bash
 localhost:framin-co zenlabs$ git reset --hard HEAD
+```
+```bash
 localhost:framin-co zenlabs$ git st
+```
+```bash
 localhost:framin-co zenlabs$ git checkout origin/development
-para borrar el branch corrupto
+```
+```bash
+#para borrar el branch corrupto
 localhost:framin-co zenlabs$ git branch -D development
+```
+```bash
 localhost:framin-co zenlabs$ git checkout -b development
+```
+```bash
 
-estos ultimos pasos en caso de que se este en medio de un rebase cortado
+#estos ultimos pasos en caso de que se este en medio de un rebase cortado
 
 localhost:framin-co zenlabs$ git pull --rebase development
+```
+```bash
 localhost:framin-co zenlabs$ git pull --rebase origin development
+```
+```bash
 localhost:framin-co zenlabs$
 
-y actualizar en el source tree con windows+R y listo lo tienes en correcto estado!!!!
 
+#y actualizar en el source tree con windows+R y listo lo tienes en correcto estado!!!!
+```
