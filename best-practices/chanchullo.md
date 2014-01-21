@@ -17,56 +17,24 @@ git st
 ```bash
 localhost:framin-co zenlabs$ git checkout develop
 ```
-```bash
-localhost:framin-co zenlabs$ git st
-```
-```bash
-localhost:framin-co zenlabs$ stree
-```
-```bash
-localhost:framin-co zenlabs$ git pull --rebase develop
-```
-```bash
-localhost:framin-co zenlabs$ git st
-```
-```bash
-localhost:framin-co zenlabs$ git add .
-```
-```bash
-localhost:framin-co zenlabs$ git reset --hard HEAD
-```
-```bash
-localhost:framin-co zenlabs$ git st
-```
-```bash
-localhost:framin-co zenlabs$ git checkout origin/develop
-```
-```bash
-#para borrar el branch corrupto
-localhost:framin-co zenlabs$ git branch -D develop
-#aqui deberia mostrarte una linea diciendote que has eliminado el branch develop (Deleted branch develop)
-```
-```bash
-localhost:framin-co zenlabs$ git checkout -b develop
-#Aqui deberia mostrarte un mensaje diciendoate que has cambiado (switched a new branch/develop)
-```
-```bash
 
-#estos ultimos pasos en caso de que se este en medio de un rebase cortado
-
-localhost:framin-co zenlabs$ git pull --rebase develop
-```
 ```bash
-localhost:framin-co zenlabs$ git pull --rebase origin develop
-#hasta aqui tienes limpiado el brach develop, ahora esta siguiente instruccion :
-```
-```bash
-localhost:framin-co zenlabs$ rm -rf 'feature/cambios_primeros'
-#esta instruccion solo en el caso de estar en medio de un proceso incluncuso
-```
-```bash
-localhost:framin-co zenlabs$
+ # limpiamos el branch de cambios que se hicieron
+ git add .
+ git reset --hard HEAD
+ # aqui ya no tendriamos que ver cambios
+ git st
+ # cambiamos de branch original
+ git checkout origin/develop
+ # para borrar el branch corrupto
+ git branch -D develop
+ #aqui deberia mostrarte una linea diciendote que has eliminado el branch develop (Deleted branch develop)
+ # creamos el branch nuevo, sin errores
+ git checkout -b develop
+ #Aqui deberia mostrarte un mensaje diciendoate que has cambiado (switched a new branch/develop)
 
-
-#y actualizar en el source tree con windows+R y listo lo tienes en correcto estado!!!!
+ #estos ultimos pasos en caso de que se este en medio de un rebase cortado
+ # si hacemos de nuevo esto no deberia de bajar nada y decir que esta up-date
+ git pull --rebase develop
+ 
 ```
