@@ -14,7 +14,7 @@ git st
 # muestra el branch en el que uno esta... si no lo estas haces el checkout develop, pero creo que la mayoria ya se encuentra en ese directorio, entonces te vas
 #al comando git add . y siguen con todas sus instrucciones
  # si existen cambios por hacer debemos limpiarlos con un git reset
- # limpiamos el branch de cambios que se hicieron
+ # (opcional) limpiamos el branch de cambios que se hicieron
  git add .
  git reset --hard HEAD
  # aqui ya no tendriamos que ver cambios
@@ -27,9 +27,7 @@ git st
  # creamos el branch nuevo, sin errores
  git checkout -b develop
  #Aqui deberia mostrarte un mensaje diciendoate que has cambiado (switched a new branch/develop)
-
- #estos ultimos pasos en caso de que se este en medio de un rebase cortado
- # si hacemos de nuevo esto no deberia de bajar nada y decir que esta up-date
+ # (opcional) si hacemos de nuevo esto no deberia de bajar nada y decir que esta up-date
  git pull --rebase develop
  
 ```
