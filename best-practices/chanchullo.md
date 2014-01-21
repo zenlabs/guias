@@ -38,23 +38,25 @@ localhost:framin-co zenlabs$ git reset --hard HEAD
 localhost:framin-co zenlabs$ git st
 ```
 ```bash
-localhost:framin-co zenlabs$ git checkout origin/development
+localhost:framin-co zenlabs$ git checkout origin/develop
 ```
 ```bash
 #para borrar el branch corrupto
-localhost:framin-co zenlabs$ git branch -D development
+localhost:framin-co zenlabs$ git branch -D develop
+#aqui deberia mostrarte una linea diciendote que has eliminado el branch develop (Deleted branch develop)
 ```
 ```bash
-localhost:framin-co zenlabs$ git checkout -b development
+localhost:framin-co zenlabs$ git checkout -b develop
+#Aqui deberia mostrarte un mensaje diciendoate que has cambiado (switched a new branch/develop)
 ```
 ```bash
 
 #estos ultimos pasos en caso de que se este en medio de un rebase cortado
 
-localhost:framin-co zenlabs$ git pull --rebase development
+localhost:framin-co zenlabs$ git pull --rebase develop
 ```
 ```bash
-localhost:framin-co zenlabs$ git pull --rebase origin development
+localhost:framin-co zenlabs$ git pull --rebase origin develop
 ```
 ```bash
 localhost:framin-co zenlabs$
