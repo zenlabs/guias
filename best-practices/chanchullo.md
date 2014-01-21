@@ -28,6 +28,6 @@ git st
  git checkout -b develop
  #Aqui deberia mostrarte un mensaje diciendoate que has cambiado (switched a new branch/develop)
  # (opcional) si hacemos de nuevo esto no deberia de bajar nada y decir que esta up-date
- git pull --rebase develop
+ git pull --rebase origin develop
  
 ```
