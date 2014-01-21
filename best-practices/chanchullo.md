@@ -14,7 +14,7 @@ git st
 # muestra el branch en el que uno esta...
 ```
 ```bash
-localhost:framin-co zenlabs$ git checkout development
+localhost:framin-co zenlabs$ git checkout develop
 ```
 ```bash
 localhost:framin-co zenlabs$ git st
@@ -23,7 +23,7 @@ localhost:framin-co zenlabs$ git st
 localhost:framin-co zenlabs$ stree
 ```
 ```bash
-localhost:framin-co zenlabs$ git pull --rebase development
+localhost:framin-co zenlabs$ git pull --rebase develop
 ```
 ```bash
 localhost:framin-co zenlabs$ git st
