@@ -21,7 +21,8 @@ localhost:framin-co zenlabs$ git st
 ```
 ```bash
 localhost:framin-co zenlabs$ stree
-
+```
+```bash
 localhost:framin-co zenlabs$ git pull --rebase development
 ```
 ```bash
