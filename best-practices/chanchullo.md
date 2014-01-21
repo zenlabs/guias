@@ -11,7 +11,8 @@ Los Pasos para limpiar un branch son los siguientes:
 
 ```bash
 git st
-# muestra el branch en el que uno esta...
+# muestra el branch en el que uno esta... si no lo estas haces el checkout develop, pero creo que la mayoria ya se encuentra en ese directorio, entonces te vas
+#al comando git add . y siguen con todas sus instrucciones
 ```
 ```bash
 localhost:framin-co zenlabs$ git checkout develop
