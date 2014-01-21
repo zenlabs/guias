@@ -58,6 +58,11 @@ localhost:framin-co zenlabs$ git pull --rebase develop
 ```
 ```bash
 localhost:framin-co zenlabs$ git pull --rebase origin develop
+#hasta aqui tienes limpiado el brach develop, ahora esta siguiente instruccion :
+```
+```bash
+localhost:framin-co zenlabs$ rm -rf 'feature/cambios_primeros'
+#esta instruccion solo en el caso de estar en medio de un proceso incluncuso
 ```
 ```bash
 localhost:framin-co zenlabs$
