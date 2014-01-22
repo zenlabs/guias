@@ -19,6 +19,8 @@ git st
  git reset --hard HEAD
  # aqui ya no tendriamos que ver cambios
  git st
+ # IMPORTANTE jalamos TODOS los cambios actuales
+ git fetch origin
  # cambiamos de branch original
  git checkout origin/develop
  # para borrar el branch corrupto
