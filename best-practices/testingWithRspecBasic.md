@@ -1,5 +1,7 @@
 Estos comandos debes de colocar para realizar un testeo...
 
+```
+```
 1. Crear las 3 bases de datos de tu proyecto :
    - Para development
    - Para production
@@ -37,4 +39,3 @@ Estos comandos debes de colocar para realizar un testeo...
    Randomized with seed 38745
    
    Algo parecido....
-
