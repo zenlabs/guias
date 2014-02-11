@@ -6,29 +6,39 @@ Cuando se les registre dentro de el sitio http://gitlab.zenlabs.net/ recibiran u
 Luego de esto se tiene que registrar la llave ssh dentro del site para que la maquina en que trabaja pueda tener acceso a los repositorios de código, si no se registra esto no podrá realizar ningún trabajo.
 
 
-1 Configuracion
----------------
+## 1 Configuracion de Git y Gitlab
 
-### Generacion de los SSH Keys
+
+### 1.1 Generacion de los SSH Keys
 
 Para generar una llave dentro de su maquina haga el siguiente comando:
 
 ```bash
 ssh-keygen -t rsa -C "info@zenlabs.net"
 # Generating public/private rsa key pair...
+
+# despues de esto preguntara donde lo creara, por defecto es en /home/username/.ssh/id_rsa esta bien por defecto en esa carpeta
+# Luego pedira la contraseña de la llave publica, por defecto sin contraseña 
+# confirmen la contraseña en blanco.
 ```
 
-lo siguiente es copiar y pegar el contenido de la llave publica en su perfil, dentro de la sección SSH Keys
+### 1.2 Ver/copiar tu llave publica.
+
+lo siguiente es copiar y pegar el contenido de la llave publica en su perfil, dentro de la sección SSH Keys, con este comando se logra mostrar el contenido y luego este mismo se lo copia.
 
 ```bash
 cat ~/.ssh/id_rsa.pub
 # ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6eNtGpNGwstc....
 ```
 
+### 1.3 Adicion de tu SSH KEY a tu cuanta en gitlab
+
 ![Adicion de llave ssh](http://gitlab.zenlabs.net/zenlabs/guias/raw/master/images/add-ssh-gitlab.jpg "Title")
 
 Importante: usted puede registrar todas las maquinas que requiera.
-Configurar el email y el usuario dentro de git:
+
+### 1.4 Configurar el email y el usuario dentro de git:
+
 Para asignar el nombre de usuario:
 
 ```bash
@@ -42,6 +52,7 @@ git config --global user.email "tu_cuenta@zenlabs.net"
 git config --global user.email
 # Verificar el nuevo email #tu_cuenta@zenlabs.net
 ```
+### 1.5 verificacion de que configuro correctamente su cuenta
 
 Como paso final esta probar que funcione el acceso para esto ejecuta este comando:
 
@@ -52,12 +63,13 @@ Connection to zenlabs.net closed.
 ```
 
 Si da otro tipo de respuesta consulte con el administrador.
-Instalacion de git flow
+
+## 2 Instalacion de Gitflow
+
 Seguir los siguientes pasos https://github.com/petervanderdoes/gitflow/wiki (NUEVO)
 
 
-2 Flujo de trabajo:
-------------------
+## 3 Flujo de trabajo:
 
 dentro de los proyectos en Zenlabs se manejan dos branchs, uno el de producción o versión final es el branch “master” y otro de desarrollo que esta en “develop”.
 Tener una copia del proyecto en su maquina:
@@ -145,4 +157,3 @@ git checkout origin/develop
 git branch -D develop
 git checkout -b develop
 ```
-
