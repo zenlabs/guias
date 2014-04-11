@@ -33,3 +33,12 @@ git st
  git pull --rebase origin develop
  
 ```
+
+que no instale la documentacion de las gemas
+============================================
+
+Esto solo hacerlo UNA VES.
+
+```
+echo "gem: --no-ri --no-rdoc" >> ~/.gemrc
+```
