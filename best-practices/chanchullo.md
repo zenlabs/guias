@@ -42,3 +42,28 @@ Esto solo hacerlo UNA VES.
 ```
 echo "gem: --no-ri --no-rdoc" >> ~/.gemrc
 ```
+
+Guia para configurar los alias de comandos GIT.
+===============================================
+Copiar el siguiente texto
+
+git config --global alias.co checkout
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.br branch
+git config --global alias.hist 'log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
+git config --global alias.type 'cat-file -t'
+git config --global alias.dump 'cat-file -p'
+
+Y pegarlo en la terminal y darle enter esto añadira el siguiente texto dentro del archivo .gitconfig de $HOME del directorio así
+
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+
+Con esto Ud. ya puede llamar la siguiente vez a los comandos GIT con sus abreviaturas correspondientes
