@@ -47,6 +47,14 @@ Guia para configurar los alias de comandos GIT.
 ===============================================
 Copiar el siguiente texto
 
+```bash
+git st
+# añadir uno a uno por cada alias
+ git config --global alias.co checkout 
+ git config --global alias.ci commit
+ git config --global alias.st status
+ 
+```
 git config --global alias.co checkout
 git config --global alias.ci commit
 git config --global alias.st status
