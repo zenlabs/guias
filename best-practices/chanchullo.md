@@ -69,12 +69,18 @@ Con esto Ud. ya puede llamar la siguiente vez a los comandos GIT con sus abrevia
 
 Guia para matar el proceso del server de rails
 ==============================================
-[5/6/14, 12:54:04 PM] Adriana Miranda: zenlabss-Mac-Pro-3:quiero-ayudar zenlabs$ lsof -wni tcp:3000
+
+```bash
+# añadir uno a uno por cada alias
+lsof -wni tcp:3000
+#muestra lo siguiente 
 COMMAND     PID    USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
 Google      429 zenlabs   59u  IPv4 0x945528c7b8ca9d89      0t0  TCP 127.0.0.1:51441->127.0.0.1:hbci (ESTABLISHED)
 ruby      20180 zenlabs   12u  IPv4 0x945528c7ba147d89      0t0  TCP *:hbci (LISTEN)
 ruby      20180 zenlabs   13u  IPv4 0x945528c7ba2e1d89      0t0  TCP 127.0.0.1:hbci->127.0.0.1:51157 (CLOSE_WAIT)
-You have new mail in /var/mail/zenlabs
-zenlabss-Mac-Pro-3:quiero-ayudar zenlabs$ kill -9 20180
-zenlabss-Mac-Pro-3:quiero-ayudar zenlabs$ lsof -wni tcp:3000
-[5/6/14, 1:06:15 PM] Adriana Miranda: page(params[:page]).per(3)
+#colocar
+kill -9 20180
+#luego al hacer corre de nuevo 
+lsof -wni tcp:3000
+#no deberia mostrar nada
+```
