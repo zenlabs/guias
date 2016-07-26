@@ -4,10 +4,9 @@ Guias
 Guias para tener un orden dentro de nuestro trabajo, y programar bajo un estilo unico dentro de Zenlabs.
 
 * [Code Review con Git](http://gitlab.zenlabs.net/zenlabs/guias/blob/master/code-review/README.md)
-* [Buenas Practicas de programacion](http://gitlab.zenlabs.net/zenlabs/guias/blob/master/best-practices/README.md)
-* [Guia de Estilo de programacion en Ruby (LECTURA FORZADA)](http://gitlab.zenlabs.net/zenlabs/guias/blob/master/code-style/ruby/README.md)
+* [programming best practices](http://gitlab.zenlabs.net/zenlabs/guias/blob/master/best-practices/README.md)
+* [Style guide ruby (LECTURA FORZADA)](http://gitlab.zenlabs.net/zenlabs/guias/blob/master/code-style/ruby/README.md)
 * [Otras guias de estilos de codificacion](http://gitlab.zenlabs.net/zenlabs/guias/blob/master/code-style/README.md)
-* [Guia de desarrollo para PHP/Magento](http://gitlab.zenlabs.net/zenlabs/guias/blob/master/magento/setup.md)
 
 High level guidelines:
 
